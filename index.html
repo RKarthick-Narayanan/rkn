@@ -4,165 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Page</title>
-<style>
-    /* Reset styles */
-    body, h1, h2, ul, li, p {
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      height: 100vh;
-      color: #333; /* Neutral dark gray for text */
-      background-color: #f7f9fc; /* Soft light gray background for better readability */
-    }
-
-    .container {
-      display: flex;
-      width: 100%;
-    }
-
-    .sidebar {
-      background-color: #2b3a42; /* Dark gray-blue for a professional sidebar */
-      color: #ffffff; /* White text for sidebar */
-      width: 250px;
-      padding: 20px;
-      height: 100%;
-      box-sizing: border-box;
-      position: fixed;
-    }
-
-    .sidebar h2 {
-      margin-bottom: 20px;
-      color: #f4f4f4; /* Softer white for headings */
-    }
-
-    .sidebar ul {
-      list-style: none;
-    }
-
-    .sidebar ul li {
-      margin-bottom: 10px;
-    }
-
-    .sidebar ul li a {
-      text-decoration: none;
-      color: #b8c1c8; /* Light gray for links */
-      font-weight: bold;
-      display: block;
-      padding: 5px;
-      border-radius: 5px;
-    }
-
-    .sidebar ul li a:hover {
-      background-color: #34495e; /* Hover color with a slightly lighter shade */
-    }
-
-    .content {
-      margin-left: 270px;
-      padding: 20px;
-      box-sizing: border-box;
-      overflow-y: auto;
-      width: calc(100% - 270px);
-    }
-
-    .content section {
-      margin-bottom: 50px;
-    }
-
-    .content h1 {
-      margin-bottom: 15px;
-      color: #2b3a42; /* Dark gray-blue for headings */
-    }
-
-    .content p {
-      line-height: 1.6;
-      color: #555; /* Softer gray for text */
-    }
-
-    /* Timeline Styles */
-    .timeline {
-      position: relative;
-      margin: 20px 0;
-      padding: 20px 0;
-      background-color: #ffffff; /* White background for the timeline */
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    }
-
-    .timeline::before {
-      content: '';
-      position: absolute;
-      left: 50%;
-      top: 0;
-      bottom: 0;
-      width: 4px;
-      background-color: #2b3a42; /* Matches the sidebar for consistency */
-      transform: translateX(-50%);
-    }
-
-    .timeline-entry {
-      position: relative;
-      width: 50%;
-      padding: 10px 20px;
-      box-sizing: border-box;
-    }
-
-    .timeline-entry.left {
-      left: 0;
-      text-align: right;
-      padding-right: 40px;
-    }
-
-    .timeline-entry.right {
-      left: 50%;
-      text-align: left;
-      padding-left: 40px;
-    }
-
-    .timeline-entry::before {
-      content: '';
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      top: 15px;
-      background-color: #2b3a42; /* Matches the timeline line color */
-      border-radius: 50%;
-      border: 4px solid #fff; /* White border for contrast */
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .timeline-entry.left::before {
-      right: -30px;
-    }
-
-    .timeline-entry.right::before {
-      left: -30px;
-    }
-
-    .timeline-entry h2 {
-      color: #2b3a42; /* Dark gray-blue for headings */
-      margin-bottom: 5px;
-    }
-
-    .timeline-entry p {
-      margin: 5px 0;
-      color: #555; /* Softer gray for text */
-    }
-
-    .title {
-      font-weight: bold;
-    }
-</style>
-  
-
+  <link rel="stylesheet" href="styles-3.css"> <!-- Link to external CSS file -->
 </head>
 <body>
+<header class="header">
+  <!-- Left side: Logo -->
+  <div class="header-left">
+    <img src="logo.png" alt="Logo" class="logo" />
+  </div>
+
+  <!-- Right side: Name and Tagline -->
+  <div class="header-right">
+    <h1 class="name">Ramakrishnan Karthick Narayanan</h1>
+  </div>
+   <!-- Hamburger Menu for Mobile -->
+    <div class="hamburger" onclick="toggleSidebar()">&#9776;</div>
+</header>
+
+
+  <!-- Container -->
   <div class="container">
+    <!-- Sidebar Navigation -->
     <nav class="sidebar">
-         <ul>
+    <!--
+	<h2>Navigation</h2> -->
+      <ul>
         <li><a href="#01">Home</a></li>
         <li><a href="#02">About</a></li>
         <li><a href="#03">Education</a></li>
@@ -171,161 +37,77 @@
         <li><a href="#06">Contact</a></li>
       </ul>
     </nav>
+
+    <!-- Main Content -->
     <main class="content">
       <section id="01">
-<centre>
-        <h1>Ramakrishnan Karthick Narayanan</h1>
-<h3 style="text-align:center">Linguist | Digital Archivist | Language Technology</h3>
-    <div style="text-align:center"; class="emphasis">
-        "ஏன் என்ற கேள்வி இங்கு கேட்காமல் வாழ்க்கை இல்லை..."<br>
-        <span>Yen endra kelvi Ingu ketkaamal vaazhkai Illai...</span><br>
-        "...பகுத்தறிவு பிறந்ததெல்லாம் கேள்விகள் கேட்டதனாலே"
-    </div>
-    <div style="text-align:right"; class="quote-author">
-        - Vaali (வாலி)
-    </div>
-</centre>
+     <section id="01">
+ 
+  <div class="emphasis">
+    <p>"ஏன் என்ற கேள்வி இங்கு கேட்காமல் வாழ்க்கை இல்லை...<br>
+       Yen endra kelvi ingu ketkaamal vaazhkai illai...<br>
+       ...பகுத்தறிவு பிறந்ததெல்லாம் கேள்விகள் கேட்டதனாலே"</p>
+  </div>
+  <div class="quote-author">
+    <p>- Vaali (வாலி)</p>
+  </div>
+  </section>
+
+      <section id="02">
+        <h2>About Me</h2>
+     <div class="bio">
+    <p><span class="highlight">R. Karthick Narayanan</span> is a linguist and archivist specializing in community-centered research on minor Indian languages, focusing on the intersections of language, culture, and technology. In 2024, he was honored with the SPARROW-R Thyagarajan Literary Award for his work on Toda verbal art in Tamil and English, recognizing his dedication to documenting marginalized languages.</p>
+
+    <p><span class="highlight">Dr. Karthick</span> holds a PhD in Linguistics from Jawaharlal Nehru University, India, specializing in sociolinguistics, language documentation, and conservation. His research examines multilingualism in India, exploring critical questions about the organization and use of languages within multilingual communities, the dynamics of language choice, and the factors contributing to the marginalization of minority languages.</p>
+
+    <p>In addition to his work on multilingualism, <span class="highlight">Dr. Karthick</span> is committed to digitally archiving linguistic and cultural data. His archiving practice engages with questions of ethical stewardship and community-centered ownership, striving to reimagine the archive as a participatory, dynamic space. He actively supports language revitalization initiatives by collaborating with communities to record, annotate, describe, and archive linguistic resources.</p>
+
+    <p>Currently, <span class="highlight">Dr. Karthick</span> serves as the Chief Community and Data Officer at UnReal TecE LLP. Previously, he held a postdoctoral fellowship at the Moturi Satyanarayana Centre for Advanced Study in the Humanities and Social Sciences at Krea University, where he advanced his research through theoretical and practical applications.</p>
+  </div>
+</section>
+
       </section>
-<section id="02">
-<h2> About Me</h2>
-<br><br>
-      <p> <span class="highlight">R. Karthick Narayanan</span>is a linguist and archivist specialising in community-centred research on minor Indian languages, focusing on the intersections of language, culture, and technology. In 2024, he was honoured with the SPARROW-R Thyagarajan Literary Award for his work on Toda verbal art in Tamil and English, recognizing his dedication to documenting marginalised languages. </p> <br><br>
-<p><span class="highlight"> Dr. Karthick </span> holds a PhD in linguistics from Jawaharlal Nehru University, India, and specialises in sociolinguistics, language documentation, and conservation. His research investigates multilingualism in India, posing critical questions about the organization and use of languages within multilingual communities, the dynamics of language choice, and the factors contributing to the marginalization of minority languages. </p> <br><br>
-<p>In addition to his work on multilingualism, <span class="highlight"> Dr. Karthick </span> is committed to digitally archiving linguistic and cultural data. His archiving practice engages with questions of ethical stewardship and community-centred ownership, striving to reimagine the archive as a participatory, dynamic space. He also supports language revitalization initiatives, collaborating with communities to record, annotate, describe, and archive linguistic resources. </p>
-<br><br>
-<p>Currently, <span class="highlight"> Dr. Karthick </span> serves as the Chief Community and Data Officer at UnReal TecE LLP. Previously, he held a post-doctoral fellowship at the Moturi Satyanarayana Centre for Advanced Study in the Humanities and Social Sciences at Krea University, where he advanced his research through theoretical and practical applications. </p>
-</section>
-   <section id="03">
-<style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f5f5f5;
-            color: #004085;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            margin: 50px auto;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        h1 {
-            text-align: center;
-            color: #004085;
-            margin-bottom: 30px;
-        }
-        .timeline {
-            position: relative;
-            margin: 0 auto;
-            padding: 10px 0;
-            width: 100%;
-        }
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 50%;
-            top: 0;
-            bottom: 0;
-            width: 4px;
-            background-color: #4CAF50;
-            transform: translateX(-50%);
-        }
-        .timeline-entry {
-            position: relative;
-            width: 50%;
-            padding: 10px 20px;
-            box-sizing: border-box;
-        }
-        .timeline-entry.left {
-            left: 0;
-            text-align: right;
-            padding-right: 40px;
-        }
-        .timeline-entry.right {
-            left: 50%;
-            text-align: left;
-            padding-left: 40px;
-        }
-        .timeline-entry::before {
-            content: '';
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            top: 15px;
-            background-color: #4CAF50;
-            border-radius: 50%;
-            border: 4px solid #fff;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
-        .timeline-entry.left::before {
-            right: -30px;
-        }
-        .timeline-entry.right::before {
-            left: -30px;
-        }
-        .timeline-entry h2 {
-            color: #004085;
-            margin-bottom: 5px;
-        }
-        .timeline-entry p {
-            margin: 5px 0;
-        }
-        .title {
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body>
- <h2>Academic Qualifications</h2>
-    <div class="container">
-       
-        <div class="timeline">
-            <!-- PhD Entry -->
-            <div class="timeline-entry left">
-                <h2>Doctor of Philosophy, Linguistics</h2>
-                <p><span class="title">Institution:</span> Jawaharlal Nehru University, New Delhi, India</p>
-                <p><span class="title">Duration:</span> 2014-2019</p>
-                <p><span class="title">Thesis Title:</span> Maintenance of minority languages of Nilgiri district, Tamilnadu A Case Study of Toda, and Kota</p>
-                <p><span class="title">Supervisors:</span> <span class="supervisor">Prof. Anvita Abbi & Prof. Ayesha Kidwai</span></p>
-            </div>
 
-            <!-- MPhil Entry -->
-            <div class="timeline-entry right">
-                <h2>Master of Philosophy, Linguistics</h2>
-                <p><span class="title">Institution:</span> Jawaharlal Nehru University, New Delhi, India</p>
-                <p><span class="title">Duration:</span> 2012-2014</p>
-                <p><span class="title">Dissertation Title:</span> Assessing Vitality of Languages Spoken by Less than 10,000 speakers in India</p>
-                <p><span class="title">Supervisor:</span> <span class="supervisor">Prof. Anvita Abbi</span></p>
-            </div>
+    <div class="timeline">
+  <!-- 1st Entry (Left) -->
+  <div class="timeline-entry left">
+    <h3>Doctor of Philosophy, Linguistics</h3>
+    <p><strong>Institution:</strong> Jawaharlal Nehru University</p>
+    <p><strong>Duration:</strong> 2014-2019</p>
+  </div>
 
-            <!-- MA Entry -->
-            <div class="timeline-entry left">
-                <h2>Master of Arts, Linguistics</h2>
-                <p><span class="title">Institution:</span> Jawaharlal Nehru University, New Delhi, India</p>
-                <p><span class="title">Duration:</span> 2010-2012</p>
-                <p><span class="title">Dissertation Title:</span> Phonetics and Phonology of Shekhawati</p>
-            </div>
+  <!-- 2nd Entry (Right) -->
+  <div class="timeline-entry right">
+    <h3>Master of Philosophy, Linguistics</h3>
+    <p><strong>Institution:</strong> Jawaharlal Nehru University, New Delhi</p>
+    <p><strong>Duration:</strong> 2012-2014</p>
+    <p><strong>Dissertation Title:</strong> Assessing Vitality of Languages</p>
+  </div>
 
-            <!-- B.Ed Entry -->
-            <div class="timeline-entry right">
-                <h2>Bachelor of Education, English Language Teaching</h2>
-                <p><span class="title">Institution:</span> Tamilnadu Teacher Education University, Chennai, India</p>
-                <p><span class="title">Duration:</span> 2009-2010</p>
-            </div>
+  <!-- 3rd Entry (Left) -->
+  <div class="timeline-entry left">
+    <h3>Master of Arts, Linguistics</h3>
+    <p><strong>Institution:</strong> Jawaharlal Nehru University</p>
+    <p><strong>Duration:</strong> 2010-2012</p>
+  </div>
 
-            <!-- BA Entry -->
-            <div class="timeline-entry left">
-                <h2>Bachelor of Arts, English</h2>
-                <p><span class="title">Institution:</span> Loyola College, University of Madras, Chennai, India</p>
-                <p><span class="title">Duration:</span> 2006-2009</p>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="04">
-    <!-- Post-Doctoral & Work Experience Section -->
+  <!-- 4th Entry (Right) -->
+  <div class="timeline-entry right">
+    <h3>Bachelor of Education, English Language Teaching</h3>
+    <p><strong>Institution:</strong> Tamilnadu Teacher Education University</p>
+    <p><strong>Duration:</strong> 2009-2010</p>
+  </div>
+
+  <!-- 5th Entry (Left) -->
+  <div class="timeline-entry left">
+    <h3>Bachelor of Arts, English</h3>
+    <p><strong>Institution:</strong> Loyola College, Chennai</p>
+    <p><strong>Duration:</strong> 2006-2009</p>
+  </div>
+</div>
+
+      <section id="04">
+        <!-- Post-Doctoral & Work Experience Section -->
     <h2>Post-Doctoral & Work Experience</h2>
 <br><br>
     <ul class="experience-list">
@@ -387,6 +169,8 @@
         </li>
     </ul>
 </section>
+      </section>
+
 <section id="05">
     <h2>Publications</h2>
 
@@ -433,35 +217,25 @@
         <li>Kidwai, A., Tinkari, B., Narayanan, R. Karthick, and Metha, S. “Rongpo Narrations, Songs and Stories.” Report submitted to the Scheme of Protection and Preservation of Endangered Languages, Central Institute of Indian Languages, Mysuru, 2016.</li>
     </ul>
 </section>
-<section id="06">
-<footer style="
-    text-align: center;
-    padding: 20px 0;
-    background-color: #f4f4f4; /* Mild professional background color */
-    color: #555; /* Soft text color for professional look */
-    font-size: 0.9rem;
-    border-top: 1px solid #ddd; /* Subtle border for separation */
-">
- <p>
-    Connect with me for collaborations, queries, or to learn more about my work.
-  </p>
-<p>
-    Email: 
-    <a href="mailto:karthick.narayanan@outlook.in">karthick[dot]narayanan[at]outlook.in</a> |
-    <a href="mailto:karthick1988.nara@gmail.com">karthick1988[dot]nara[at]gmail.com</a>
-  </p>
- 
 
-  <p>&copy; 2024 R. Karthick Narayanan. All Rights Reserved.</p>
-<p style="color: blue; font-size: 1rem; font-weight: bold; text-align: center; margin: 20px 0; font-family: 'Arial', sans-serif;">
-  Katravai Patravai
-</p>
-</footer>
-</section>
+
+      <section id="06">
+        <!-- Footer -->
+        <footer class="footer">
+          <p>Connect with me for collaborations:</p>
+          <p>Email: 
+            <a href="mailto:karthick.narayanan@outlook.in">karthick.narayanan@outlook.in</a>
+          </p>
+          <p>&copy; 2024 R. Karthick Narayanan. All Rights Reserved.</p>
+          <p class="footer-quote">Katravai Patravai</p>
+        </footer>
+      </section>
     </main>
-
-
   </div>
 </body>
+<script>
+  function toggleSidebar() {
+    document.querySelector('.sidebar').classList.toggle('show');
+  }
+</script>
 </html>
-
