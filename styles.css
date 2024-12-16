@@ -148,9 +148,15 @@ body {
 }
 
 .timeline-entry.right {
-  left: 55%;
+  left: 50%;
+  transform: translateX(-15px);
   text-align: left;
 }
+/* 
+.timeline-entry.right {
+  left: 55%;
+  text-align: left;
+} */
 
 .timeline-entry::before {
   content: '';
