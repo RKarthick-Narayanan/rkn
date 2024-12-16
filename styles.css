@@ -149,7 +149,7 @@ body {
 
 .timeline-entry.right {
   left: 50%;
-  transform: translateX(-15px);
+  transform: translateX(-10px);
   text-align: left;
 }
 /* 
