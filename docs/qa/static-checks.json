@@ -1,0 +1,30 @@
+{
+  "pages_checked": 11,
+  "local_links_checked": 152,
+  "publication_count": 16,
+  "text_contrast": {
+    "#1F2F35 / #F7F6F2": 12.81,
+    "#1F2F35 / #FFFFFF": 13.85,
+    "#24675D / #F7F6F2": 6.12,
+    "#24675D / #FFFFFF": 6.62,
+    "#586B70 / #F7F6F2": 5.18,
+    "#586B70 / #FFFFFF": 5.6
+  },
+  "errors": [],
+  "browser_qa": "SKIPPED \u2014 explicitly waived by user in VS Code session on 12 October 2026",
+  "external_urls": [
+    "https://aclanthology.org/2025.fieldmatters-1.7/",
+    "https://archive.cambridgescholars.com/product/978-1-0364-5464-7/",
+    "https://doi.org/10.1007/s12046-021-01639-8",
+    "https://doi.org/10.1108/EL-02-2022-0030",
+    "https://doi.org/10.14429/djlit.40.05.16349",
+    "https://doi.org/10.25894/LDD65",
+    "https://rkarthick-narayanan.github.io/rkn/",
+    "https://rkarthick-narayanan.github.io/rkn/about.html",
+    "https://rkarthick-narayanan.github.io/rkn/contact.html",
+    "https://rkarthick-narayanan.github.io/rkn/index.html",
+    "https://rkarthick-narayanan.github.io/rkn/projects.html",
+    "https://rkarthick-narayanan.github.io/rkn/publications.html",
+    "https://rkarthick-narayanan.github.io/rkn/research.html"
+  ]
+}
