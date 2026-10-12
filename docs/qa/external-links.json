@@ -1,0 +1,37 @@
+[
+  {
+    "url": "https://aclanthology.org/2025.fieldmatters-1.7/",
+    "status": 200,
+    "final_url": "https://aclanthology.org/2025.fieldmatters-1.7/"
+  },
+  {
+    "url": "https://doi.org/10.1007/s12046-021-01639-8",
+    "status": 200,
+    "final_url": "https://link.springer.com/article/10.1007/s12046-021-01639-8?error=cookies_not_supported&code=3219520f-6133-4731-8351-17f51a6608f4"
+  },
+  {
+    "url": "https://doi.org/10.1108/EL-02-2022-0030",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://doi.org/10.14429/djlit.40.05.16349",
+    "status": 200,
+    "final_url": "https://publicationsdrdo.in/index.php/djlit/article/view/16349"
+  },
+  {
+    "url": "https://doi.org/10.25894/LDD65",
+    "status": 200,
+    "final_url": "https://www.lddjournal.org/article/id/1245/"
+  },
+  {
+    "url": "https://www.vitalsource.com/in/products/multilinguality-vitality-and-endangerment-r-karthick-narayanan-v9781036454654",
+    "status": 200,
+    "final_url": "https://www.vitalsource.com/in/products/multilinguality-vitality-and-endangerment-r-karthick-narayanan-v9781036454654"
+  },
+  {
+    "url": "https://archive.cambridgescholars.com/product/978-1-0364-5464-7/",
+    "status": 200,
+    "final_url": "https://archive.cambridgescholars.com/product/978-1-0364-5464-7/",
+    "verification": "Title and author matched the supplied book record."
+  }
+]
