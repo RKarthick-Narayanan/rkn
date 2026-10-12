@@ -53,7 +53,7 @@ Navigation tests verify logic using a DOM stub; they are not a browser audit.
 
 **Browser QA was explicitly waived by the user on 12 October 2026 in the VS Code
 Codex session.** Screenshots, rendered responsiveness, real keyboard navigation,
-Tamil font rendering, and axe/Lighthouse audits have not been performed.
+and axe/Lighthouse audits have not been performed.
 
 ## Deployment
 

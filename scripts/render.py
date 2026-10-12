@@ -56,7 +56,7 @@ def shell(file,title,desc,body,canonical=None,extra=''):
 <main id="main" class="container" tabindex="-1">
 {body}
 </main>
-<footer class="site-footer"><div class="container footer-inner"><div><p class="footer-name">R. Karthick Narayanan</p><a href="mailto:{EMAIL}">{EMAIL}</a></div><div class="footer-meta"><p>© <span data-year>2026</span> R. Karthick Narayanan</p><p>Katravai Patravai</p></div></div></footer>
+<footer class="site-footer"><div class="container footer-inner"><div><p class="footer-name">R. Karthick Narayanan</p><a href="mailto:{EMAIL}">{EMAIL}</a></div><div class="footer-meta"><p>© <span data-year>2026</span> R. Karthick Narayanan</p></div></div></footer>
 </body>
 </html>
 '''
@@ -68,9 +68,7 @@ hero=f'''<header class="hero"><div class="hero-identity"><p class="eyebrow">Ling
 themes='<div class="themes">'+''.join(f'<article><span class="index-number" aria-hidden="true">0{i}</span><h3><a href="research.html#{id}">{title}</a></h3><p>{text}</p></article>' for i,(id,title,text) in enumerate(THEMES,1))+'</div>'
 selected='<div class="selected-list">'+''.join(f'<article><p class="eyebrow">{kind}</p><h3><a href="projects.html#{id}">{title}</a></h3><p>{text}</p></article>' for id,kind,title,text in [('toda-kota','Field research','Toda and Kota in the Nilgiris','Multilingual practices, language choice, and the structural conditions shaping language vitality.'),('sidhela','Archival practice','SiDHELA','Language collections and collaborative approaches to digital archiving in the Sikkim–Darjeeling Himalayas.'),('life-suite','Collaborative scholarship','Field to Model · LiFE Suite','Community-based data collection, linguistic annotation, and language-technology workflows.')])+'</div>'
 shortbio=quoted_between('### Short formal identification','### Home research teasers')[0]
-# Retain the existing excerpt verbatim; attribution is identified as inherited rather than newly verified.
-quote='''<figure class="pullquote"><blockquote lang="ta">“ஏன் என்ற கேள்வி இங்கு கேட்காமல் வாழ்க்கை இல்லை...<br>...பகுத்தறிவு பிறந்ததெல்லாம் கேள்விகள் கேட்டதனாலே”</blockquote><figcaption>— Vaali <span lang="ta">(வாலி)</span></figcaption></figure>'''
-body=hero+section('Research at a glance','<p class="reading">'+hero_copy+'</p>'+themes,'research-overview')+feature()+section('Selected work',selected+'<p>'+link('projects.html','Explore projects & archives')+'</p>','selected-work')+section('A research practice grounded in context','<p class="reading">'+shortbio+'</p><p>'+link('about.html','About & academic history')+'</p>','profile')+quote+section('Let’s keep the conversation going',f'<p class="reading">For academic correspondence, research discussions, or enquiries about potential collaborations, please get in touch.</p>{link("mailto:"+EMAIL,"Email me")}','correspondence','closing')
+body=hero+section('Research at a glance','<p class="reading">'+hero_copy+'</p>'+themes,'research-overview')+feature()+section('Selected work',selected+'<p>'+link('projects.html','Explore projects & archives')+'</p>','selected-work')+section('A research practice grounded in context','<p class="reading">'+shortbio+'</p><p>'+link('about.html','About & academic history')+'</p>','profile')+section('Let’s keep the conversation going',f'<p class="reading">For academic correspondence, research discussions, or enquiries about potential collaborations, please get in touch.</p>{link("mailto:"+EMAIL,"Email me")}','correspondence','closing')
 write('index.html','R. Karthick Narayanan | Linguist & Digital Archivist','Research in multilingualism, language vitality, documentation and community-centred digital archiving by linguist R. Karthick Narayanan.',body)
 
 research=intro('Questions · Contexts · Methods','Research',quoted_between('## IV.3 Research page','### R1.')[0])

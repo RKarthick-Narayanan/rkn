@@ -36,7 +36,6 @@ requested skipping browser QA on 12 October 2026. Consequently:
 - 320×800, 390×844, 768×1024, 1024×768 and 1440×900 rendered layouts are untested.
 - No measured document scroll width or visual overlap test was performed.
 - Real keyboard/touch interactions and screen-reader announcements are untested.
-- Tamil shaping and platform fallback fonts are untested on Android/iOS/Windows.
 - No axe/Lighthouse browser audit was run; no score is claimed.
 
 Source implements content-driven responsive grids, a 1120px desktop-navigation
@@ -44,12 +43,15 @@ breakpoint, minmax columns, word wrapping, 16px minimum gutters, reduced-motion 
 increased-contrast preferences, and fully visible navigation when JS is disabled.
 These source properties are not substitutes for rendered verification.
 
+The Tamil quotation and transliterated footer phrase were subsequently removed
+at the user’s request; this change was checked in generated HTML and source.
+
 ## Optional review walkthrough
 
 Serve the parent folder with `python3 -m http.server 8000 --bind 127.0.0.1`.
 Open `/rkn/` and check all six pages at the five target sizes. Confirm no horizontal
 scrolling and no clipped publication names/email. Use Tab, Enter/Space, Escape and
-an outside click to exercise the mobile menu. Check text at 200% zoom, Tamil glyphs,
+an outside click to exercise the mobile menu. Check text at 200% zoom,
 skip-link focus and JS-disabled navigation. Follow `education.html`,
 `experience.html`, the three old HTM routes and `index.html#02`–`#06`.
 

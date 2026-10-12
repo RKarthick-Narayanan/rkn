@@ -21,9 +21,8 @@ maintained in `publications.json` and original material in `original/`.
 - J04: publisher language-context PDF and language snapshots index establish
   Ktien Hima and R. Karthick Narayanan, volume 19, pages 66–78; verified DOI
   <https://doi.org/10.25894/LDD65> replaces the old PID destination.
-- Tamil quotation wording, Vaali attribution and reuse permission explicitly
-  confirmed by the user in this session. No extra lyrics added. Glyph rendering
-  remains untested because browser QA was waived.
+- The user’s revised instruction removes Tamil-language presentation: the
+  quotation and transliterated footer phrase are omitted from the public site.
 - 2024 SPARROW-R Thyagarajan Literary Award retained as supplied.
 
 ## CHECK — preserved or conservatively worded; human review requested

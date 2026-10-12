@@ -21,7 +21,7 @@ Emerald DOI returned HTTP 403 to automated requests and needs manual access revi
 
 **Browser QA was explicitly waived by the user in the VS Code Codex session.**
 No screenshots, measured viewport overflow checks, live keyboard/screen-reader
-verification, platform Tamil font checks or axe/Lighthouse audit are claimed.
+verification or axe/Lighthouse audit are claimed.
 The five requested viewport sizes and review steps are documented in
 `docs/qa/README.md`. No screenshot placeholders are supplied.
 
@@ -33,8 +33,8 @@ order; formal thesis titles; exact appointment months; membership status; and
 Tholkudi/Suvadugal role and partner wording. Historical citation details are
 preserved where uncertain; new project language is conservative. Prospective
 orthography programme details, sensitive or unpublished records, unverified
-profiles and CV downloads remain held. The user confirmed the existing Tamil
-quotation's wording, Vaali attribution and reuse permission.
+profiles and CV downloads remain held. The Tamil quotation and transliterated
+footer phrase are omitted at the user’s request.
 
 ## Local preview
 

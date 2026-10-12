@@ -53,8 +53,8 @@ links and canonical metadata, without script-only or automatic redirects.
   no ownership, contract, funding, open-access or personally executed scanning claims.
 - Prospective orthography programme and unpublished material are held from launch.
 - Existing email retained. No guessed profiles, dummy CV, contact form or downloads.
-- User explicitly confirmed quotation wording, Vaali attribution and permission in
-  this session; verbatim two-line Tamil quotation retained with `lang="ta"`.
+- Per the user’s revised instruction, removed the Tamil quotation and the
+  transliterated footer phrase from the public site. Original source copies remain archived.
 
 ## Image audit
 
