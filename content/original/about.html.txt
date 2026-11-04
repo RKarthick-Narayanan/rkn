@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Dr. R. Karthick Narayanan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="education.html">Education</a>
+        <a href="publications.html">Publications</a>
+        <a href="experience.html">Experience</a>
+    </nav>
+
+    <!-- About Me Section -->
+    <h2>About Me</h2>
+
+    <h3>Dr. R. Karthick Narayanan</h3>
+    <p>Dr. R. Karthick Narayanan is a linguist and archivist with expertise in community-centered research on minor Indian languages, exploring their intersections with language, culture, and technology. In 2024, he received the SPARROW-R Thyagarajan Literary Award for his work on Toda verbal art into Tamil and English, honoring his commitment to documenting marginalized languages.</p>
+
+    <p>He earned his PhD in Linguistics from Jawaharlal Nehru University and conducted postdoctoral research at Krea University. A member of the Linguistic Society of India and the Society of Endangered Languages, Dr. Karthick has published widely on topics including language maintenance, verbal art, gender dynamics in language shift, and digital archiving.</p>
+</div>
+
+</body>
+</html>
