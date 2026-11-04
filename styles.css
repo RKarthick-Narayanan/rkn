@@ -1,3 +1,12 @@
+/* Quiet Defiance — palette-only update to the published CV layout.
+   The structure, typography and responsive layout remain unchanged. */
+:root {
+  --paper-bg: #f4f1eb;
+  --teal-ink: #1a2f33;
+  --teal-muted: #52666a;
+  --wada-ochre-red: #b94941;
+}
+
 /* General Reset */
 body, h1, h2, h3, ul, li, p {
   margin: 0;
@@ -7,16 +16,16 @@ body, h1, h2, h3, ul, li, p {
 
 body {
   font-family: Arial, sans-serif;
-  color: #333;
-  background-color: #f7f9fc;
+  color: var(--teal-ink);
+  background-color: var(--paper-bg);
   line-height: 1.6;
 }
 
 /* Header */
 .header {
   width: 100%;
-  background-color: #2b3a42;
-  color: #ffffff;
+  background-color: var(--teal-ink);
+  color: var(--paper-bg);
   padding: 15px 20px;
   display: flex;
   align-items: center;
@@ -49,22 +58,22 @@ body {
 
 .header-right .tagline {
   font-size: 1rem;
-  color: #b8c1c8;
+  color: #d1d8d6;
 }
 /* Hamburger Menu */
 .hamburger {
   display: none;
   font-size: 2rem;
   cursor: pointer;
-  color: #ffffff;
+  color: var(--paper-bg);
   z-index: 1100;
   margin-top: 10px
 }
 
 /* Sidebar */
 .sidebar {
-  background-color: #2b3a42;
-  color: #fff;
+  background-color: var(--teal-ink);
+  color: var(--paper-bg);
   width: 200px;
   height: calc(100vh - 70px); /* Full height minus header */
   position: fixed;
@@ -85,7 +94,7 @@ body {
 }
 
 .sidebar ul li a {
-  color: #b8c1c8;
+  color: #d1d8d6;
   text-decoration: none;
   display: block;
   padding: 8px;
@@ -94,8 +103,8 @@ body {
 }
 
 .sidebar ul li a:hover {
-  background-color: #34495e;
-  color: #fff;
+  background-color: var(--teal-muted);
+  color: var(--paper-bg);
 }
 
 /* Content */
@@ -103,13 +112,13 @@ body {
   margin-left: 270px;
   padding: 120px 20px 20px; /* Prevent overlap with header */
   box-sizing: border-box;
-  background-color: #ffffff;
+  background-color: var(--paper-bg);
   min-height: 100vh;
 }
 
 .content h2 {
   margin-bottom: 20px;
-  color: #2b3a42;
+  color: var(--teal-ink);
   font-size: 1.5rem;
 }
 
@@ -125,7 +134,7 @@ body {
   content: '';
   position: absolute;
   width: 4px;
-  background-color: #2b3a42;
+  background-color: var(--teal-ink);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -137,7 +146,7 @@ body {
   width: 45%;
   margin: 20px 0;
   padding: 15px;
-  background-color: #ffffff;
+  background-color: var(--paper-bg);
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -163,7 +172,7 @@ body {
   position: absolute;
   width: 15px;
   height: 15px;
-  background-color: #4CAF50;
+  background-color: var(--wada-ochre-red);
   border-radius: 50%;
   top: 20px;
 }
@@ -179,19 +188,19 @@ body {
 .timeline-entry h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
-  color: #2b3a42;
+  color: var(--teal-ink);
 }
 
 .timeline-entry p {
-  color: #555;
+  color: var(--teal-muted);
 }
 
 /* Footer */
 .footer {
   text-align: center;
   padding: 20px;
-  background-color: #2b3a42; /* Match header/sidebar color */
-  color: #ffffff; /* White text */
+  background-color: var(--teal-ink); /* Match header/sidebar color */
+  color: var(--paper-bg); /* White text */
   width: 100%; /* Ensure full width */
   margin: 0; /* Remove any default margin */
   box-sizing: border-box;
@@ -200,7 +209,7 @@ body {
 }
 
 .footer a {
-  color: #4CAF50; /* Green for links */
+  color: var(--wada-ochre-red); /* Green for links */
   text-decoration: none;
 }
 
@@ -210,7 +219,7 @@ body {
 
 .footer-quote {
   font-weight: bold;
-  color: #4CAF50; /* Green text */
+  color: var(--wada-ochre-red); /* Green text */
   margin-top: 10px;
 }
 
@@ -230,7 +239,7 @@ body {
   margin-left: 230px; /* Adjust for sidebar width */
   padding: 100px 20px 20px;
   box-sizing: border-box;
-  background-color: #ffffff;
+  background-color: var(--paper-bg);
 }
 
 
@@ -302,4 +311,48 @@ body {
     margin-left: 0; /* Remove sidebar space in mobile */
     padding-top: 70px;
   }
+}
+
+/* Make links deliberate, while preserving contrast on dark surfaces. */
+.content a {
+  color: var(--teal-ink);
+  text-decoration: underline;
+  text-decoration-color: var(--teal-muted);
+  text-underline-offset: .2em;
+  transition: color .2s ease, text-decoration-color .2s ease;
+}
+.content a:hover,
+.content a:active {
+  color: var(--wada-ochre-red);
+  text-decoration-color: var(--wada-ochre-red);
+}
+.sidebar ul li a { color: #d1d8d6; }
+.sidebar ul li a:hover,
+.sidebar ul li a:active {
+  background-color: var(--teal-muted);
+  color: var(--paper-bg);
+  border-left: 3px solid var(--wada-ochre-red);
+  padding-left: 5px;
+}
+.sidebar ul li a[aria-current="page"] {
+  color: var(--paper-bg);
+  border-left: 3px solid var(--wada-ochre-red);
+  padding-left: 5px;
+}
+.footer a {
+  color: var(--paper-bg);
+  text-decoration: underline;
+  text-decoration-color: var(--wada-ochre-red);
+}
+.footer a:hover, .footer a:active {
+  color: #ffffff;
+  text-decoration-color: #ffffff;
+}
+.footer-quote { color: var(--paper-bg); }
+a:focus-visible, button:focus-visible {
+  outline: 3px solid var(--wada-ochre-red);
+  outline-offset: 3px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .content a, .sidebar ul li a { transition: none; }
 }
